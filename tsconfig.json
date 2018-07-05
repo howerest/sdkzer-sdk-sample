@@ -1,0 +1,20 @@
+{
+  "version": "2.1.4",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "umd",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "rootDir": "./src",
+    "outDir": "dist/",
+    "sourceMap": true,
+    "moduleResolution": "node"
+  },
+  "compileOnSave": true,
+  "include": [
+    "**/src/*.ts"
+  ],
+  "exclude": []
+}
