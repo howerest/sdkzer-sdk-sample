@@ -1,19 +1,19 @@
 {
   "name": "sdkzer-sdk-sample",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A sample of SDK using sdkzer",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "document": "yarn typedoc --out doc src/*.ts",
+    "build": "yarn tsc -p tsconfig.json",
+    "document": "yarn typedoc --tsconfig tsconfig.json --excludePrivate --exclude 'node_modules/**' --out doc src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Valin <hola@davidvalin.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^10.5.1",
-    "js-webservices": "^0.1.1",
-    "sdkzer": "^1.6.0",
-    "typedoc": "^0.11.1"
+    "sdkzer": "^0.8.1",
+    "typedoc": "^0.23.28",
+    "typescript": "^5.0.3"
   }
 }

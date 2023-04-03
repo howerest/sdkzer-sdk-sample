@@ -1,12 +1,11 @@
 {
-  "version": "2.1.4",
+  "version": "5.0.3",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "module": "umd",
     "declaration": true,
     "noImplicitAny": false,
     "removeComments": false,
-    "suppressImplicitAnyIndexErrors": true,
     "rootDir": "./src",
     "outDir": "dist/",
     "sourceMap": true,

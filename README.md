@@ -2,36 +2,30 @@
 
 Here an example of SDK using [sdkzer](https://www.github.com/howerest/sdkzer)
 
+Note that this is just an example and in order to see the syncing working you need a working REST api with 3 endpoints: /users /posts / comments. This repository is only intended as a demo on you how to use Sdkzer.
+
 ##### How to use
 
-1. Install the this package as dependency: `yarn add sdkzer-sdk-sample --save-dev`
-2. Start using the SDK:
+1. Install the this package as dependency: `yarn add sdkzer-sdk-sample`
+2. Start using the SDK, example:
 
-```javascript
-import {SDK} from "sdkzer-sdk-sample"
+```
+import {User, Post, Comment} from "sdkzer-sdk-sample"
 
-// Fetch a collection of Events in the city of New York
-const eventsInNewYork = SDK.Event.fetchIndexByCityName("New York").then(
-  // Success
-  function(eventInstances) {
-    events = eventInstances;
-  },
-  // Fail
-  function() { }
-);
+const user = new User();
+user.attr('name', 'Chuck Norris');
+user.attr('email', 'employee@mycompany.com');
+if (user.isOwnEmployee()) {
+  console.log(`${user.attr('name')} is an internal employee`);
+}
 
-// Create a new event in Amsterdam
-const newEventInAmsterdam = new Event({
-  name: "The coolest event ever in Amsterdam",
-  geo: {
-    lat: 52.3702,
-    lon: 4.8952
-  },
-  start_date: "2018-07-04T21:00:00.744Z",
-  end_date: "2018-07-04T23:00:00.744Z"
-});
+if (user.validate() && user.isValid()) {
+  await user.save();
+  console.log(`${user.attr('name')} is ${user.isNew() ? 'a non existing record': 'an existing record'`);
+}
 
-event.save(); // We got a Promise
+const commentsOfUser = Comment.fetchIndexByUser(user.attr('id'));
+const commentsToday = commentsOfUser.filter(comment => comment.isToday());
 
 ```
 
