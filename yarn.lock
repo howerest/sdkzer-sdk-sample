@@ -2,6 +2,31 @@
 # yarn lockfile v1
 
 
+"@types/fs-extra@~11.0.0":
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-11.0.1.tgz#f542ec47810532a8a252127e6e105f487e0a6ea5"
+  integrity sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==
+  dependencies:
+    "@types/jsonfile" "*"
+    "@types/node" "*"
+
+"@types/jsonfile@*":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@types/jsonfile/-/jsonfile-6.1.1.tgz#ac84e9aefa74a2425a0fb3012bdea44f58970f1b"
+  integrity sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==
+  dependencies:
+    "@types/node" "*"
+
+"@types/minimist@~1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
+  integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
+
+"@types/node@*":
+  version "18.15.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.11.tgz#b3b790f09cb1696cffcec605de025b088fa4225f"
+  integrity sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==
+
 "@types/node@^10.5.1":
   version "10.17.60"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
@@ -11,6 +36,11 @@ ansi-sequence-parser@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ansi-sequence-parser/-/ansi-sequence-parser-1.1.0.tgz#4d790f31236ac20366b23b3916b789e1bde39aed"
   integrity sha512-lEm8mt52to2fT8GhciPCGeCXACSz2UwIN4X2e2LJSnZ5uAbn2/dsYdOmUXq0AtWS5cpAupysIneExOgH0Vd2TQ==
+
+badgen@~3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/badgen/-/badgen-3.2.2.tgz#7556b520055c4952ee46229c57d7a1cc71a85748"
+  integrity sha512-MfBNhOzp+qbTg/3BAeaK1g+VE3uZ0CRfqMyrfyI3JUBz7b+DwxrZbYQdz5JQnibRih9YOVzXuVJl3A3xaWXfFQ==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -24,10 +54,45 @@ brace-expansion@^2.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
+coverage-badges-cli@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/coverage-badges-cli/-/coverage-badges-cli-1.1.0.tgz#7086f487350051d779e0cbcba4a4fb77996522c3"
+  integrity sha512-soq4kwTQJIULtSOV/z/TXEwQL/IsFlGIUbWF+dIRoTfI2dy2z8oXNJflqY21KB+MTjwy5pH26Du3YyxaxG+GBw==
+  dependencies:
+    "@types/fs-extra" "~11.0.0"
+    "@types/minimist" "~1.2.2"
+    badgen "~3.2.2"
+    fs-extra "~11.1.0"
+    mini-svg-data-uri "^1.4.4"
+    minimist "~1.2.5"
+
+fs-extra@~11.1.0:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
+  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
+  integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
 jsonc-parser@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"
   integrity sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==
+
+jsonfile@^6.0.1:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-6.1.0.tgz#bc55b2634793c679ec6403094eb13698a6ec0aae"
+  integrity sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
+  dependencies:
+    universalify "^2.0.0"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 lunr@^2.3.9:
   version "2.3.9"
@@ -39,6 +104,11 @@ marked@^4.2.12:
   resolved "https://registry.yarnpkg.com/marked/-/marked-4.3.0.tgz#796362821b019f734054582038b116481b456cf3"
   integrity sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==
 
+mini-svg-data-uri@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
+
 minimatch@^7.1.3:
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.4.4.tgz#e15a8ab56cc5469eca75a26a1319e5c00900824a"
@@ -46,10 +116,17 @@ minimatch@^7.1.3:
   dependencies:
     brace-expansion "^2.0.1"
 
-sdkzer@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/sdkzer/-/sdkzer-0.8.1.tgz#4296177d78741f90542bb587eb75a7a356fd693f"
-  integrity sha512-szuJUh/rNHMac0MdDGZSgCAKEBYWxO6PP77tw379wXpk7OqGXE2DMrcgs4St+ql7tIYt2E6NugUJY6nzmFwllw==
+minimist@~1.2.5:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
+  integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
+
+sdkzer@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/sdkzer/-/sdkzer-0.8.2.tgz#2951f8b6e18fff3fe40125f45ac90728682d0f1f"
+  integrity sha512-tUtaO6eFCfJBDBr5ioN3P1zmeSkSEItNdyR2Z37xsCVGdVMwrgDmUr+yhhl+AH36q1bgJYNUMqRwPd9kXMSUMw==
+  dependencies:
+    coverage-badges-cli "^1.1.0"
 
 shiki@^0.14.1:
   version "0.14.1"
@@ -75,6 +152,11 @@ typescript@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.3.tgz#fe976f0c826a88d0a382007681cbb2da44afdedf"
   integrity sha512-xv8mOEDnigb/tN9PSMTwSEqAnUvkoXMQlicOb0IUVDBSQCgBSaAAROUZYy2IcUy5qU6XajK5jjjO7TMWqBTKZA==
+
+universalify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
+  integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
 vscode-oniguruma@^1.7.0:
   version "1.7.0"

@@ -9,11 +9,14 @@
     "rootDir": "./src",
     "outDir": "dist/",
     "sourceMap": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "skipLibCheck": true
   },
   "compileOnSave": true,
   "include": [
     "**/src/*.ts"
   ],
-  "exclude": []
+  "exclude": [
+    "**/node_modules/@types/**"
+  ]
 }

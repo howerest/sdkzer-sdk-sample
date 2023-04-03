@@ -2,7 +2,7 @@
 
 Here an example of SDK using [sdkzer](https://www.github.com/howerest/sdkzer)
 
-Note that this is just an example and in order to see the syncing working you need a working REST api with 3 endpoints: /users /posts / comments. This repository is only intended as a demo on you how to use Sdkzer.
+Note that this is just an example and in order to see the syncing working you need a working REST api with 3 endpoints: /users /posts / comments. This repository is only intended as a demo on you how to use sdkzer.
 
 ##### How to use
 
